@@ -1,12 +1,13 @@
 [build]
   publish = "."
-  functions = "netlify/functions"
 
 [functions]
+  directory = "Edubyte_Coastal_TVET_Survey_Portal/netlify/functions"
   node_bundler = "esbuild"
 
 [[headers]]
   for = "/*"
+
   [headers.values]
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
