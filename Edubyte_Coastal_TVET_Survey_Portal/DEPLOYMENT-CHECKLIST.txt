@@ -1,0 +1,16 @@
+EDUBYTE COASTAL SURVEY PORTAL — DEPLOYMENT CHECKLIST
+
+[ ] Run supabase-schema.sql in the intended Supabase project
+[ ] Deploy this folder/repository to Netlify
+[ ] Set SUPABASE_URL
+[ ] Set SUPABASE_SERVICE_ROLE_KEY
+[ ] Set ADMIN_TOKEN
+[ ] Optional: set RESEND_API_KEY
+[ ] Optional: set SURVEY_FROM_EMAIL
+[ ] Optional: set SURVEY_NOTIFY_EMAIL
+[ ] Redeploy after environment variables are saved
+[ ] Test one full survey submission
+[ ] Open /admin.html and confirm the test response appears
+[ ] Export a CSV and confirm the response data is complete
+[ ] Share the public survey link with Coastal KZN TVET College respondents
+[ ] At close-out, export responses and apply the agreed retention/deletion process
