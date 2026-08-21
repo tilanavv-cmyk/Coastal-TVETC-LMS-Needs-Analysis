@@ -11,7 +11,7 @@ a{color:var(--blue2)}
 .shell{min-height:100vh}
 .topbar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
 .topbar-inner{max-width:1180px;margin:auto;padding:14px 24px;display:flex;align-items:center;gap:20px}
-.logo{width:185px;height:auto;display:block}
+.logo{width:250px;height:auto;display:block}
 .topbar-title{margin-left:auto;text-align:right}
 .topbar-title strong{display:block;font-size:14px}
 .topbar-title span{color:var(--muted);font-size:12px}
