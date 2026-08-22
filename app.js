@@ -195,19 +195,54 @@ async function submitSurvey(){
   }
 }
 
-function showSuccess(code){
+function showSuccess(code) {
   localStorage.removeItem("edubyteCoastalSurvey");
-  $("#surveyCard").innerHTML=`<div class="success">
-    <div class="success-icon">✓</div>
-    <div class="kicker">Response received</div>
-    <h2>Thank you for participating.</h2>
-    <p>Your contribution will support the College’s Digital Transformation Needs Analysis and proposed implementation roadmap.</p>
-    <p>Reference: <span class="code">${esc(code)}</span></p>
-    <p style="color:#6a7585;font-size:13px">Edubyte · A Digital Learning Division of Lutsha Empowerment</p>
-  </div>`;
-  $("#sidebar").style.display="none";
-  $("#progress").style.width="100%";
-  window.scrollTo({top:0,behavior:"smooth"});
+
+  // Switch the page into full-width confirmation mode
+  document.querySelector(".layout").classList.add("success-mode");
+
+  $("#surveyCard").innerHTML = `
+    <div class="success">
+
+      <div class="success-icon">✓</div>
+
+      <div class="kicker">
+        Response Received
+      </div>
+
+      <h2>Thank you for participating.</h2>
+
+      <p class="success-message">
+        Your contribution will support Coastal KZN TVET College's
+        Digital Transformation Needs Analysis and proposed
+        implementation roadmap.
+      </p>
+
+      <div class="success-email-note">
+        A copy of your completed response has been sent to the
+        email address you provided.
+      </div>
+
+      <div class="reference-box">
+        <span class="reference-label">Submission Reference</span>
+        <span class="code">${esc(code)}</span>
+      </div>
+
+      <div class="success-brand">
+        <img src="/edubyte-logo.png" alt="Edubyte">
+        <p>A Digital Learning Division of Lutsha Empowerment</p>
+      </div>
+
+    </div>
+  `;
+
+  $("#sidebar").style.display = "none";
+  $("#progress").style.width = "100%";
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 }
 
 $("#prevBtn").addEventListener("click",()=>{ collectSection(); goTo(state.sectionIndex-1); });
