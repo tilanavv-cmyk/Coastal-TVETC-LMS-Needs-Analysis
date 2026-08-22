@@ -129,21 +129,17 @@ a{color:var(--blue2)}
 /* =========================================
    FULL-WIDTH SUCCESS / CONFIRMATION SCREEN
    ========================================= */
-
 .layout.success-mode {
   grid-template-columns: 1fr;
   max-width: 1180px;
 }
-
 .layout.success-mode .main {
   grid-column: 1 / -1;
   width: 100%;
 }
-
 .layout.success-mode .hero {
   display: none;
 }
-
 .layout.success-mode #surveyCard {
   width: 100%;
   min-height: 520px;
@@ -158,39 +154,31 @@ a{color:var(--blue2)}
   min-height: 520px;
   padding: 64px 60px;
   text-align: center;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 .success-icon {
   width: 74px;
   height: 74px;
   margin: 0 auto 20px;
-
   border-radius: 50%;
   display: grid;
   place-items: center;
-
   background: #e9f7f1;
   color: #137a52;
-
   font-size: 34px;
   font-weight: 900;
 }
-
 .success .kicker {
   margin-bottom: 12px;
 }
-
 .success h2 {
   margin: 0 0 16px;
   font-size: 34px;
   line-height: 1.2;
 }
-
 .success-message {
   max-width: 700px;
   margin: 0 auto 20px;
